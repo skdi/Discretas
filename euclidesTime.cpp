@@ -8,10 +8,11 @@ int sx,ty;
 
 int main()
 {
-    cout<<"X: "<<sx<<" "<<"Y: "<<ty<<endl;
+
     t0=clock();
     cout<<"MCD: "<<gcd(1024,480)<<" ";
     t1 = clock();
+    cout<<"X: "<<sx<<" "<<"Y: "<<ty<<endl;
 
     double time = (double(t1-t0)/CLOCKS_PER_SEC);
     cout << "Execution Time: " << time << endl;
