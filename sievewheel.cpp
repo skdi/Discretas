@@ -5,9 +5,10 @@
 
 using namespace std;
 
-#define MAX_NUM 500000//limite para los primos
+#define MAX_NUM 30000000//limite para los primos
 // creamos un array de MAX_NUM inicializados en 0
-ll primos[MAX_NUM];
+// primos[MAX_NUM];
+bool * primos = new bool [MAX_NUM]();
 
 void erasto(){
     for (ll p = 2; p < MAX_NUM; p++) // recorrido del array
