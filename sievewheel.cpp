@@ -1,14 +1,16 @@
 #include <iostream>
 #include <math.h>
+#include <ctime>
 #include <stdlib.h>
 #define ll long long
+unsigned t0, t1;
 
 using namespace std;
 
-#define MAX_NUM 30000000//limite para los primos
+#define MAX_NUM 3000000//limite para los primos
 // creamos un array de MAX_NUM inicializados en 0
-// primos[MAX_NUM];
-bool * primos = new bool [MAX_NUM]();
+ll primos[MAX_NUM];
+
 
 void erasto(){
     for (ll p = 2; p < MAX_NUM; p++) // recorrido del array
@@ -43,7 +45,11 @@ void print()
 
 int main()
 {
+    t0=clock();
     erasto();
     print();
+    t1 = clock();
+    double time = (double(t1-t0)/CLOCKS_PER_SEC);
+    cout << "Execution Time: " << time << endl;
     return 0;
 }
