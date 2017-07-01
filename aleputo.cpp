@@ -1,3 +1,49 @@
+
+
+
+
+
+TE LA KREISTE WE :V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <math.h>
 #include <ctime>
